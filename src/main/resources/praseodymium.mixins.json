@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.praseodymium.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"EntityRenderDispatcherMixin",
+		"SingleQuadParticleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

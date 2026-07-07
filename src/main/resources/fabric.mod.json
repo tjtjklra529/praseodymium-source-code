@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "praseodymium",
+	"version": "${version}",
+	"name": "Praseodymium",
+	"description": "Adaptive client-side performance controls for Fabric 26.2 that try to hold a minimum FPS floor by scaling render-heavy settings.",
+	"authors": [
+		"yli20"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/yli20/praseodymium-mod-source-code"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/praseodymium/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"dev.praseodymium.PraseodymiumMod"
+		],
+		"client": [
+			"dev.praseodymium.client.PraseodymiumClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "praseodymium.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
